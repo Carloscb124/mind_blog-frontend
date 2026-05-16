@@ -1,0 +1,215 @@
+.settings-page { padding-bottom: 64px; }
+
+.settings-page__container {
+  max-width: 640px;
+  padding-top: 32px;
+}
+
+.settings-page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  transition: color var(--transition);
+}
+
+.settings-page__back:hover { color: var(--text-primary); }
+
+.settings-page__header {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.settings-page__header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.settings-page__header p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.settings-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.settings-success {
+  background: rgba(0, 212, 232, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(0, 212, 232, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Avatar */
+.settings-avatar-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.settings-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.settings-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.settings-avatar-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.settings-avatar-field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.settings-avatar-field input {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 9px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.settings-avatar-field input:focus { border-color: var(--accent); }
+
+.settings-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.settings-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+}
+
+/* Form */
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.settings-field label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.settings-field input,
+.settings-field textarea {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 10px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color var(--transition);
+  width: 100%;
+}
+
+.settings-field input:focus,
+.settings-field textarea:focus { border-color: var(--accent); }
+
+.settings-field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.settings-counter {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+/* Info section */
+.settings-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.settings-info__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.settings-info__grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.settings-info__grid span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.settings-info__grid strong {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Button */
+.settings-btn {
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  width: 100%;
+  transition: background var(--transition), opacity var(--transition);
+  margin-top: 4px;
+}
+
+.settings-btn:hover { background: var(--accent-hover); }
+.settings-btn:disabled { opacity: 0.6; cursor: not-allowed; }
